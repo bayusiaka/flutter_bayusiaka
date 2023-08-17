@@ -7,6 +7,6 @@ Distributed: Muncul dengan GIT, Mercurial, dan Bazaar pada tahun 2005.
 Versioning berfungsi untuk mengelola versi source code program. Ini menyimpan perubahan dalam kode dan memberikan kemampuan untuk melacak evolusi proyek.
 
 *Tahapan Staging Area dalam Pengembangan Aplikasi dengan Git:
-Working Area: Tempat perubahan file dalam proyek dilakukan.
-Staging: Perubahan harus ditambahkan ke staging area sebelum di-commit, menggunakan perintah 'git add'.
+Working Directory: Tempat perubahan file dalam proyek dilakukan.
+Staging Area: Perubahan harus ditambahkan ke staging area sebelum di-commit, menggunakan perintah 'git add'.
 Repository: Setelah ditambahkan ke staging area, commit dilakukan, menghasilkan pembaruan ke versi terbaru pada repository.
