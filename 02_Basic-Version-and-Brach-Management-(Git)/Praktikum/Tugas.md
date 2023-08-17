@@ -1,1 +1,1 @@
-Ini Branch FeatureB
+Ini FeatureB
