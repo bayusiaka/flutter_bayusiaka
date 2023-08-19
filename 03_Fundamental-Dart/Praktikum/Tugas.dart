@@ -22,13 +22,13 @@ double hitungLuasPersegiPanjang(double panjang, double lebar) {
 }
 
 void main() {
-  stdout.write("Masukkan nilai sisi persegi: ");
+  stdout.write("Input Nilai Sisi Persegi: ");
   double sisiPersegi = double.parse(stdin.readLineSync()!);
 
-  stdout.write("Masukkan panjang persegi panjang: ");
+  stdout.write("Input Panjang Persegi Panjang: ");
   double panjangPersegiPanjang = double.parse(stdin.readLineSync()!);
 
-  stdout.write("Masukkan lebar persegi panjang: ");
+  stdout.write("Input Lebar Persegi Panjang: ");
   double lebarPersegiPanjang = double.parse(stdin.readLineSync()!);
 
   double kelilingPersegi = hitungKelilingPersegi(sisiPersegi);
@@ -59,7 +59,7 @@ double hitungLuasLingkaran(double radius) {
 }
 
 void main() {
-  stdout.write("Masukkan jari-jari lingkaran: ");
+  stdout.write("Input jari-jari lingkaran: ");
   double radius = double.parse(stdin.readLineSync()!);
 
   double keliling = hitungKelilingLingkaran(radius);
@@ -75,13 +75,13 @@ void main() {
 import 'dart:io';
 
 void main() {
-  stdout.write("Masukkan Kata Ppertama: ");
+  stdout.write("Input Kata Pertama: ");
   String variabel1 = stdin.readLineSync()!;
 
-  stdout.write("Masukkan Kata Kedua: ");
+  stdout.write("Input Kata Kedua: ");
   String variabel2 = stdin.readLineSync()!;
 
-  stdout.write("Masukkan Kata Ketiga: ");
+  stdout.write("Input Kata Ketiga: ");
   String variabel3 = stdin.readLineSync()!;
 
   String hasilGabungan = variabel1 + " " + variabel2 + " " + variabel3;
@@ -94,10 +94,10 @@ import 'dart:io';
 import 'dart:math';
 
 void main() {
-  stdout.write("Masukkan Jari-jari Tabung: ");
+  stdout.write("Input Jari-jari Tabung: ");
   double jariJari = double.parse(stdin.readLineSync()!);
 
-  stdout.write("Masukkan Tinggi Tabung: ");
+  stdout.write("Input Tinggi Tabung: ");
   double tinggi = double.parse(stdin.readLineSync()!);
 
   double volume = hitungVolumeTabung(jariJari, tinggi);
@@ -116,7 +116,7 @@ double hitungVolumeTabung(double jariJari, double tinggi) {
 import 'dart:io';
 
 void main() {
-  stdout.write("Masukkan Kata: ");
+  stdout.write("Input Kata: ");
   String kata = stdin.readLineSync()!.toLowerCase();
 
   if (isPalindrome(kata)) {
@@ -145,7 +145,7 @@ bool isPalindrome(String kata) {
 import 'dart:io';
 
 void main() {
-  stdout.write("Masukkan Bilangan: ");
+  stdout.write("Input Bilangan: ");
   int bilangan = int.parse(stdin.readLineSync()!);
 
   print("Faktor dari $bilangan adalah:");
