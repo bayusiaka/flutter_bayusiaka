@@ -7,15 +7,25 @@ void main() {
   var jmlPensil = 1;
   var jmlTas = 1;
 
-  var ttlBarang = hitungttlBarang(jmlBuku, jmlPensil, jmlTas);
-  var ttlHarga = hitungttlHarga(hargaBuku, hargaPensil, hargaTas, ttlBarang);
-  var ttlHargaSetelahDiskon = hitungttlHargaSetelahDiskon(ttlHarga);
+  var TotalBarang = TotalBarang(jmlBuku, jmlPensil, jmlTas);
+  var TotalHarga = TotalHarga(hargaBuku, hargaPensil, hargaTas, TotalBarang);
+  var TotalHargaSetelahDiskon = TotalHargaSetelahDiskon(TotalHarga);
 
-  print("Total Barang: $ttlBarang");
-  print("Total Harga: $ttlHarga");
-  print("Total Harga Setelah Diskon: $ttlHargaSetelahDiskon");
+  print("Total Barang: $TotalBarang");
+  print("Total Harga: $TotalHarga");
+  print("Total Harga Setelah Diskon: $TotalHargaSetelahDiskon");
 }
 
-int hitungttlBarang(int jmlBuku, int jmlPensil, int jmlTas) {
+int TotalBarang(int jmlBuku, int jmlPensil, int jmlTas) {
   return jmlBuku + jmlPensil + jmlTas;
+}
+
+int TotalHarga(int hargaBuku, int hargaPensil, int hargaTas, int TotalBarang) {
+  return (hargaBuku * TotalBarang) + (hargaPensil * TotalBarang) + (hargaTas * TotalBarang);
+}
+
+double TotalHargaSetelahDiskon(int TotalHarga) {
+  double diskon = 0.10; // 10% diskon
+  double potonganDiskon = TotalHarga * diskon;
+  return TotalHarga - potonganDiskon;
 }
