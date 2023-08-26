@@ -21,7 +21,6 @@ void main() async {
 
 // Soal Prioritas 2
 // Nomor 1
-
 void main() {
   List<List<String>> laguList = [
     ['Leave The Door Open', 'Pop'],
@@ -90,8 +89,6 @@ Future<int> hitungFaktorial(int n) async {
     return n * await hitungFaktorial(n - 1);
   }
 }
-
-
 
 
 // Soal Eksplorasi
