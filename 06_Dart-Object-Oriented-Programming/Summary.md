@@ -1,0 +1,8 @@
+**OOP (Object-Oriented Programming)** 
+OOP adalah paradigma pemrograman yang berfokus pada konsep objek. Dalam OOP, program disusun dalam bentuk abstraksi objek, di mana data dan proses terkait ditempatkan dalam abstraksi tersebut. Keuntungan utama dari OOP adalah kemudahan dalam troubleshooting dan kemampuan untuk menggunakan kembali kode, dan paradigma ini digunakan dalam berbagai bahasa pemrograman seperti C++, Java, JavaScript, dan Python.
+
+**Komponen OOP:** 
+Komponen utama dalam OOP adalah Class, Object, Property, dan Method. Class adalah abstraksi dari suatu benda (object) yang memiliki ciri-ciri (property) dan sifat serta kemampuan (method). Property adalah hal-hal yang dimiliki oleh suatu class, seperti variabel yang perlu menentukan tipe data dan menginisialisasi nilainya. Method adalah perilaku atau aktivitas yang dapat dikerjakan oleh suatu class, mirip dengan function. Selain itu, OOP juga mencakup konsep Inheritance dan Generics untuk memperluas fungsionalitas dan reusabilitas kode.
+
+**Kesimpulan:** 
+OOP adalah paradigma pemrograman yang berfokus pada objek, dengan komponen utama berupa Class, Object, Property, dan Method. Ini memungkinkan penyusunan program yang lebih mudah di-troubleshoot dan lebih mudah digunakan ulang, dan banyak digunakan dalam bahasa pemrograman populer seperti C++, Java, JavaScript, dan Python. Selain itu, OOP juga mencakup konsep-konsep seperti Inheritance dan Generics untuk meningkatkan fleksibilitas dan penggunaan kembali kode.
