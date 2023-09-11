@@ -1,0 +1,5 @@
+Widget utama dalam Flutter adalah "MaterialApp," yang berfungsi sebagai akar (root) dari aplikasi dan digunakan untuk mengatur konfigurasi umum seperti tema dan navigasi. Selanjutnya, "Scaffold" adalah widget yang membantu mengorganisir kerangka dasar sebuah halaman dengan menyediakan elemen-elemen seperti app bar, tata letak, dan floating action button. "AppBar" adalah komponen khusus yang digunakan dalam "Scaffold" untuk menampilkan judul halaman dan tombol navigasi.
+
+Di sisi lain, ada dua jenis utama dari widget dalam Flutter, yaitu Stateless Widget dan Stateful Widget. Stateless Widget, seperti namanya, tidak bergantung pada perubahan data, sehingga mereka fokus pada tampilan yang statis. Mereka dibuat dengan extends pada class StatelessWidget. 
+
+Stateful Widget didesain untuk mengelola perubahan data dalam tampilan. Mereka menggunakan dua class, yaitu widget dan state, dan dibuat dengan extends pada class StatefulWidget. Ini memungkinkan pengembang untuk mempertahankan data yang dapat berubah dan membuat tampilan yang responsif sesuai dengan perubahan tersebut.
