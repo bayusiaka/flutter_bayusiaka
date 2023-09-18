@@ -1,0 +1,5 @@
+Pada materi Flutter Form (Form Input Button) mendalami cara membuat halaman form dalam pengembangan aplikasi Flutter dengan memanfaatkan berbagai widget, termasuk TextField, tombol, kotak centang (checkbox), dropdown, dan radio button.
+
+Untuk mengelola form dengan efektif, kita memanfaatkan StatefulWidget dan mengamankan status form dengan bantuan GlobalKey. Penanganan input pengguna diimplementasikan melalui widget seperti TextField, tombol, kotak centang, dropdown, dan tombol radio. Selain itu, kita juga mempelajari penggunaan tombol seperti ElevatedButton dan IconButton untuk berbagai tindakan saat tombol ditekan.
+
+Dengan penerapan Flutter Form, kita mampu menciptakan aplikasi mobile yang memberikan pengguna pengalaman yang lebih baik dalam mengisi formulir dan mengelola data yang mereka inputkan. Hal ini berkontribusi pada peningkatan kualitas aplikasi serta memastikan data yang diinputkan oleh pengguna dapat diverifikasi dan diproses dengan baik.
