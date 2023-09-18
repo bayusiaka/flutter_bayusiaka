@@ -151,6 +151,10 @@ class _HomeState extends State<Home> {
 
                                   setState(() {});
                                   formKey.currentState!.reset();
+
+                                  print("New Contact Added:");
+                                  print("Name: $name");
+                                  print("Phone Number: $number");
                                 }
                               },
                               child: const Text("Save"),
