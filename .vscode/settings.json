@@ -1,0 +1,4 @@
+{
+    "dart.cliConsole": "terminal",
+    "code-runner.runInTerminal": true
+}
