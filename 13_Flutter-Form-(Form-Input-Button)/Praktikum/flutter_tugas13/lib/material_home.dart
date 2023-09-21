@@ -141,7 +141,7 @@ class _HomeState extends State<Home> {
                                 if (formKey.currentState!.validate()) {
                                   ScaffoldMessenger.of(context).showSnackBar(
                                     const SnackBar(
-                                      content: Text("Data Kontak Telah Tersimpan"),
+                                      content: Text("New Contact Has Been Saved"),
                                     ),
                                   );
                                   dataList.add(Data(
@@ -154,7 +154,7 @@ class _HomeState extends State<Home> {
 
                                   print("New Contact Added:");
                                   print("Name: $name");
-                                  print("Phone Number: $number");
+                                  print("Phone: $number");
                                 }
                               },
                               child: const Text("Save"),
