@@ -1,0 +1,147 @@
+import 'package:flutter/material.dart';
+import 'detailed_view.dart';
+
+class ImageGridView extends StatelessWidget {
+  const ImageGridView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(15.0),
+      child: GridView.count(
+        crossAxisCount: 2,
+        mainAxisSpacing: 20,
+        crossAxisSpacing: 20,
+        children: [
+          ElevatedButton(
+            onPressed: () {
+              _showImageBottomSheet(context, 'assets/bruno.jpeg');
+            },
+            style: ElevatedButton.styleFrom(
+              padding: const EdgeInsets.all(2),
+            ),
+            child: Ink.image(
+              image: const AssetImage('assets/bruno.jpeg'),
+              fit: BoxFit.cover,
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              _showImageBottomSheet(context, 'assets/bruno.jpeg');
+            },
+            style: ElevatedButton.styleFrom(
+              padding: const EdgeInsets.all(2),
+            ),
+            child: Ink.image(
+              image: const AssetImage('assets/bruno.jpeg'),
+              fit: BoxFit.cover,
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              _showImageBottomSheet(context, 'assets/bruno.jpeg');
+            },
+            style: ElevatedButton.styleFrom(
+              padding: const EdgeInsets.all(2),
+            ),
+            child: Ink.image(
+              image: const AssetImage('assets/bruno.jpeg'),
+              fit: BoxFit.cover,
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              _showImageBottomSheet(context, 'assets/bruno.jpeg');
+            },
+            style: ElevatedButton.styleFrom(
+              padding: const EdgeInsets.all(2),
+            ),
+            child: Ink.image(
+              image: const AssetImage('assets/bruno.jpeg'),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+void _showImageBottomSheet(BuildContext context, String imagePath) {
+  showModalBottomSheet(
+    context: context,
+    builder: (BuildContext context) {
+      return ShowImage(imagePath: imagePath);
+    },
+  );
+}
+
+class ShowImage extends StatelessWidget {
+  final String imagePath;
+  const ShowImage({super.key, required this.imagePath});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          children: [
+            Image.asset(
+              imagePath,
+              height: 250,
+              width: 250,
+              fit: BoxFit.cover,
+            ),
+            const SizedBox(height: 30),
+            const Text('Do you want to see more detailed view?'),
+            const SizedBox(height: 10),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ElevatedButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(
+                            const Color.fromARGB(255, 198, 157, 106)),
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                      )
+                    )
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            DetailImagePage(imagePath: imagePath),
+                      ),
+                    );
+                  },
+                  child: const Text('Yes'),
+                ),
+                ElevatedButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(
+                            const Color.fromARGB(255, 198, 157, 106)),
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                      )
+                    )
+                  ),
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: const Text('No'),
+                ),
+              ],
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
