@@ -1,0 +1,5 @@
+State dalam Flutter merujuk pada data yang dapat dibaca saat pembuatan widget dan dapat berubah saat widget sedang aktif. Namun, state ini hanya dimiliki oleh StatefulWidget. Ada kebutuhan untuk global state agar widget dapat dengan mudah berbagi data yang sama. Ini memungkinkan widget untuk saling berinteraksi dan mengakses state yang sama tanpa batasan.
+
+Untuk menggunakan state dalam Flutter, kita dapat membuatnya sebagai property dari class widget dan menggunakannya saat widget dibangun (build). Penggunaan state ini memungkinkan widget untuk merefleksikan perubahan dalam data yang ditampilkan kepada pengguna. Perubahan state dapat dicapai dengan menggunakan method setState, yang memicu pembaruan widget.
+
+Selain itu, untuk menciptakan global state yang dapat diakses oleh seluruh widget dalam aplikasi, kita dapat menggunakan berbagai teknik manajemen state, seperti Provider. Dengan Provider, kita dapat dengan mudah mengelola state secara global tanpa perlu menginstal package tambahan. Dengan demikian, state management yang efisien dapat dicapai dalam proyek Flutter kita.
